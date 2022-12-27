@@ -17,7 +17,7 @@
     width: 100vw;
 
     img {
-        width: 100vw;
+        height: 40vh;
     }
 
     overflow: hidden;
@@ -26,19 +26,45 @@
 
 .light {
     width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform-origin: 50% 50%;
+    // background: #000;
+    margin-bottom: -69vh;
+    overflow: hidden;
 
     img {
+        position: absolute;
         // transform: translateY(74%);
-        margin-bottom: -65vh;
-        height: 96vh;
+        // margin-bottom: -65vh;
+        height: 55vw;
     }
 
     z-index: -1;
+}
+
+#torch {
+    // background-color: #000;
+    height: 15px;
+    position: absolute;
+    z-index: 100;
+    margin-left: 1px;
+    margin-bottom: -12px;
+    transform: rotate(-6deg);
+    transform-origin: 50% 50%;
+
+}
+
+.human {
+    position: absolute;
+    width: 40vh;
+
+    img {
+        height: 10vw;
+        margin-left: 1.3vw;
+    }
 }
 
 .mount {
@@ -48,6 +74,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     img {
         width: 100%;
@@ -141,10 +168,20 @@
     border: none;
 }
 
+@media only screen and (max-width: 1100px) {
+    .light {
+        margin-bottom: -59vh;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .block {
         font-size: 8vw;
         margin-right: 20px;
+    }
+
+    .light {
+        margin-bottom: -58vh;
     }
 }
 
@@ -162,9 +199,7 @@
     }
 
     .light {
-        img {
-            margin-bottom: -52vh;
-        }
+        margin-bottom: -49vh;
     }
 
     .pratishruti {
@@ -175,7 +210,13 @@
 
 @media only screen and (max-width: 460px) {
     html {
-        overflow: hidden;
+        overflow-x: hidden;
+    }
+
+    #torch {
+        width: 5px;
+        height: 5px;
+        margin: 0;
     }
 
     .block {
@@ -192,9 +233,10 @@
     }
 
     .light {
-        img {
-            margin-bottom: -52vh;
-        }
+        overflow-x: hidden;
+        margin-bottom: -46vh;
+
+        transform: scale(1.7);
     }
 
     .socials {
@@ -217,4 +259,5 @@
 #light {
     transform-origin: 50% 50%;
     // transform: rotate(100deg);
+    overflow: hidden;
 }
