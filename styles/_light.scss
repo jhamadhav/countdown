@@ -146,11 +146,16 @@
     align-items: center;
     background: #03090e;
     padding-bottom: 100px;
+
     // margin-top: -100px;
+    span {
+        width: 2px;
+        height: 60px;
+        background: #346F9F;
+    }
 
     img {
-        padding: 0 40px;
-        border-right: 2px solid #346F9F;
+        padding: 0 100px;
     }
 }
 
@@ -164,8 +169,21 @@
     }
 }
 
-#twitter {
-    border: none;
+#mob {
+    top: -50px;
+    left: 0;
+    // background: #000;
+    width: 100vw;
+    position: absolute;
+    display: none;
+    text-align: right;
+    padding: 0 20px;
+    color: #3778AC;
+    opacity: .8;
+    font-weight: bolder;
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    word-break: wrap;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -204,7 +222,12 @@
 
     .pratishruti {
         position: absolute;
-        top: 10vh;
+        top: 5vh;
+        display: none;
+    }
+
+    #mob {
+        display: block;
     }
 }
 
@@ -220,16 +243,17 @@
     }
 
     .block {
-        font-size: 5vw;
+        margin-bottom: 20px;
+        font-size: 8vw;
         margin-right: 8px;
     }
 
     #soon {
-        font-size: large;
+        font-size: x-large;
     }
 
     .count-text {
-        font-size: medium;
+        font-size: x-small;
     }
 
     .light {
@@ -259,5 +283,6 @@
 #light {
     transform-origin: 50% 50%;
     // transform: rotate(100deg);
-    overflow: hidden;
+    // overflow: hidden;
+    max-width: 850px;
 }
