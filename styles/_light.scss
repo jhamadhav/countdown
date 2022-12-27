@@ -153,11 +153,12 @@
     // margin-top: -100px;
     span {
         width: 2px;
-        height: 60px;
+        height: 50px;
         background: #346F9F;
     }
 
     img {
+        height: 30px;
         padding: 0 100px;
     }
 }
@@ -187,6 +188,10 @@
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     word-break: wrap;
+
+    span {
+        font-size: 52px;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -253,9 +258,6 @@
         letter-spacing: 2px;
     }
 
-    #soon {
-        font-size: x-large;
-    }
 
     .count-text {
         font-size: x-small;
@@ -272,6 +274,7 @@
     .socials {
         img {
             height: 26px;
+            padding: 0 60px;
         }
     }
 
