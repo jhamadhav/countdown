@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jan 31, 2023 24:00:00").getTime();
+var countDownDate = new Date("01/23/2023").getTime();
 
 const addZero = (num) => {
     let res = num.toString()
