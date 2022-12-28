@@ -47,13 +47,13 @@
 
 #torch {
     // background-color: #000;
-    height: 20px;
+    height: 2vw;
     position: absolute;
-    z-index: 100;
+    z-index: 90;
     margin-left: 9px;
     margin-bottom: -20px;
     transform: rotate(-6deg);
-    transform-origin: 50% 50%;
+    transform-origin: 50% 100%;
 
 }
 
@@ -63,7 +63,9 @@
 
     img {
         height: 10vw;
-        margin-left: 1.3vw;
+        margin-left: 1.69vw;
+        margin-top: 1vw;
+        z-index: 100;
     }
 }
 
@@ -269,6 +271,11 @@
         margin-bottom: -46vh;
 
         transform: scale(1.7);
+    }
+
+    .human {
+        margin-top: -1.2vw;
+        margin-left: -1px;
     }
 
     .socials {
